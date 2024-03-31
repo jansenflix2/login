@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script>
+        function acesso (form){
+
+form.nome.value = form.nome.value.toLowerCase()
+form.senha.value = form.senha.value.toLowerCase()
+
+if ( form.nome.value == "maria" && form.senha.value == 1234 ||
+form.nome.value == "cleber" && form.senha.value == 12345 ||
+form.nome.value == "pedro" && form.senha.value == 123456)
+{location="https://jansenflix.github.io/carnival/"
+}
+
+else {
+    form.nome.value =""
+    form.senha.value =""
+    alert("dados incorretos")
+}
+
+}
+    </script>
+    <style>
+
+
+  body{
+      
+    background-image:url(aranha.jpg) ;
+          
+          height: 100vh;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-top: 0;
+          
+         
+         
+ 
+   font-family: Arial, Helvetica, sans-serif;
+   color: antiquewhite;
+   margin: 0px;
+   padding: 0px;
+   
+  } 
+
+  .chamada{
+      background-color: rgba(0, 0, 0, 0.645);
+          
+          height: 100vh;
+          background-position: center center;
+          background-repeat: no-repeat;
+         margin: 0px;
+          background-size: cover;
+          
+          
+          
+          
+         
+         
+
+
+          
+      }
+
+      
+
+    h1{
+      font-size: 32px;
+      text-align: center;
+      padding: 5px;
+      text-shadow: 1px 1px white, -1px -1px black;
+      margin: 0;
+      color: rgb(223, 14, 14);
+     
+      
+     
+      
+  }
+
+  
+
+  fieldset{
+      margin-top: 0px;
+      margin-top: 200px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: 4px solid rgb(249, 249, 250);
+      border-radius: 6px;
+      margin-bottom: 30px;
+      
+      
+      
+      
+  }
+
+  @media screen and (max-width: 490px) {
+   
+
+    h1{
+        color: rgb(230, 24, 24);
+        text-shadow: 1px 1px white, -1px -1px black;
+        
+    }
+
+    
+
+    legend{
+        color: rgb(240, 231, 231);
+    }
+
+    form{
+        color: rgb(248, 242, 242);
+    }
+
+    fieldset{
+        margin-top: 200px;
+        
+    }
+
+    .chamada{
+      
+           height: 100vh;  
+          
+      }
+
+      body{
+      
+      height: 100vh;  
+     
+ }
+        
+      
+      }
+
+     
+ 
+
+
+    </style>
+</head>
+<body>
+  <section class="chamada">
+   <h1 class="primeiro"></h1>
+    <fieldset>
+    <legend>acesso restrito</legend>
+    <form name ="form">
+        nome: <input type="text" name="nome" autocomplete="off"> <br><br>
+        senha: <input type="password" name="senha" autocomplete="off"> <br><br>
+        <input type="button" name="botao" value="login" onclick="acesso (this.form)">
+        <input type="reset" name="limpar" value="limpar">
+        </form>
+    </fieldset>
+   
+    <h1 class="segundo">JANSENFLIX <br> FILMES E SÉRIES</h1>
+
+    
+</section>
+</body>
+</html>
